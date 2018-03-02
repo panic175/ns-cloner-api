@@ -12,6 +12,8 @@ It is recommended to use this plugin with
 # Endpoint
 
 - POST http://HOSTNAME/wp-json/ns-cloner/v1/copy
+    - Headers:
+        - Content-Type: application/json
     - Body:
         - source_id: ID of the blog you wanna copy.
         - target_name: The Name of the new blog (e.g. NAME.HOSTNAME.COM). Be aware that there is no check yet if the name already exists.
